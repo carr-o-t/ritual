@@ -1,0 +1,83 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\pande\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @ant-design/icons@4.6.4
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Inkscape\bin;C:\Users\pande\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\pande\AppData\Local\Programs\Python\Python39\;C:\Users\pande\AppData\Local\Microsoft\WindowsApps;C:\Users\pande\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pande\AppData\Roaming\npm;C:\Program Files (x86)\mingw-w64\i686-8.1.0-win32-dwarf-rt_v6-rev0\mingw32\bin;C:\php\;C:\Program Files (x86)\VideoLAN\VLC\;C:\Program Files\platform-tools_r31.0.2-windows\platform-tools;C:\Program Files\heroku\bin;C:\Users\pande\AppData\Local\GitHubDesktop\bin;
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  15.8.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/date-fns/-/date-fns-2.23.0.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Users\pande\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141390:19)
+      at Object.onceWrapper (node:events:484:28)
+      at ClientRequest.emit (node:events:378:20)
+      at TLSSocket.emitRequestTimeout (node:_http_client:780:9)
+      at Object.onceWrapper (node:events:484:28)
+      at TLSSocket.emit (node:events:390:22)
+      at TLSSocket.Socket._onTimeout (node:net:480:8)
+      at listOnTimeout (node:internal/timers:556:17)
+      at processTimers (node:internal/timers:499:7)
+
+npm manifest: 
+  {
+    "name": "solera-task",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@heroicons/react": "^1.0.4",
+      "@testing-library/jest-dom": "^5.14.1",
+      "@testing-library/react": "^11.2.7",
+      "@testing-library/user-event": "^12.8.3",
+      "aos": "^2.3.4",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-scripts": "4.0.3",
+      "web-vitals": "^1.1.2"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "buildcss": "postcss ./src/css/tailwind.css -o ./src/css/global-css.css --watch",
+      "dev": "concurrently \"npm start\" \"npm run buildcss\""
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "@tailwindcss/jit": "^0.1.18",
+      "autoprefixer": "^10.3.2",
+      "concurrently": "^6.2.1",
+      "postcss-cli": "^8.3.1",
+      "tailwindcss": "^2.2.7"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
